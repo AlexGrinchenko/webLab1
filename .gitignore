@@ -1,0 +1,7 @@
+# Files ignored by git
+
+.idea
+*.iml
+*.ipr
+target
+*.log
