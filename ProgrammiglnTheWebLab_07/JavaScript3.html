@@ -1,0 +1,316 @@
+<html>
+
+	<head>
+	
+	<meta charset="utf-8">
+	<title>Меню</title>
+	<style type="text/css">
+
+		h2 {color: white;}
+
+		.photo {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 10px 10px 10px 10px;
+		padding: 10px 20px;
+		text-align: center;
+		display: inline-block;
+		}
+		
+		.photo img {
+		border: 10px solid #8b8e4b;
+		}	
+		.photo p {
+		margin: 0;
+		}
+		
+		#menu {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		width: 100%;
+		text-align: right;
+		background-color: #808000;
+		}
+		
+		#menu li { display: inline; }
+		#menu a {
+		color: #fff;
+		padding: 5px 10px;
+		text-decoration: none;
+		font-weight: bold;
+		display: inline-block;
+		width: 100px;
+		}
+		
+		#menu a:hover {
+		border-radius: 10px 5px;
+		background-color: #0066FF;
+		}
+
+		body {background-image: url(pattern.jpg)};	
+		</style>
+
+
+		<style type="text/css">
+		.one {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px;
+		text-align: center;
+		display: inline-block;
+		}
+		.one img {
+		border: 10px solid #8b8e4b;
+		}
+		.one p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.two {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px;
+		text-align: center;
+		display: inline-block;
+		}
+		.two img {
+		border: 10px solid #8b8e4b;
+		}
+		.two p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.three {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px 10px;
+		text-align: center;
+		display: inline-block;
+		}
+		.three img {
+		border: 10px solid #8b8e4b;
+		}
+		.three p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.four {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 10px 10px 10px 10px;
+		padding: 10px 20px 10px;
+		text-align: center;
+		display: inline-block;
+		}
+		.four img {
+		border: 10px solid #8b8e4b;
+		}
+		.four p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.five {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px 10px;
+		text-align: center;
+		display: inline-block;
+		}
+		.five img {
+		border: 10px solid #8b8e4b;
+		}
+		.five p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.six {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px 10px;
+		text-align: center;
+		display: inline-block;
+		}
+		.six img {
+		border: 10px solid #8b8e4b;
+		}
+		.six p {
+		margin: 0;
+		}
+		</style>
+
+
+		<style type="text/css">
+		.seven {
+		background: white;
+		width: 20%;
+		height: 50%;
+		margin: 0 10px 10px 0;
+		padding: 10px 20px 10px;
+		text-align: center;
+		display: inline-block;
+		}
+		.seven img {
+		border: 10px solid #8b8e4b;
+		}
+		.seven p {
+		margin: 0;
+		}
+		</style>
+
+	</head>
+
+
+	<body> 
+		
+	<ul id="menu">
+	
+		<script type="text/javascript">	
+		function getDate()
+		{
+			var date = new Date();
+			var hours = date.getHours();
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+			if(seconds < 10)
+			{
+				seconds = '0' + seconds;
+			}
+			if(minutes < 10)
+			{
+				minutes = '0' + minutes;
+			}
+			document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+		}
+		setInterval(getDate,0);
+		</script>
+
+
+
+		
+		<h2 align="left"  >Текущее время:
+		<align="left" id="timedisplay"></h2>
+		
+		
+		<h2 align="left">	
+		
+		<script type="text/javascript"> 
+		var now = new Date();
+		var ny = new Date(now.getFullYear() + 1, 0, 1, 0, 0, 0);
+		document.write('До Нового ' + ny.getFullYear() + ' осталось ' + Math.floor((ny.getTime() - now.getTime()) / 86400000) + ' дней'); 
+		</script>
+		
+		<align="left" id="timedisplay"></h2>
+
+
+
+	<li><a href="#">HOME</a></li>
+	<li><a href="#">ABOUT</a></li>
+	<li><a href="#">SERVICES</a></li>
+	<li><a href="#">GALLERY</a></li>
+	<li><a href="#">BLOG</a></li>
+	<li><a href="#">CONTACTS</a></li>
+	</ul>
+	
+	
+	<div class="photo">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="one">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="two">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="three">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="four">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="five">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="six">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+
+	<div class="seven">
+	<p><img src="http://blog.gale.com/wp-content/uploads/2016/05/shutterstock_203291770-e1462303726336.jpg" width="150" height="150" style="float: bottom" /></p>
+	<p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+	euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+	ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+	ut aliquip ex ea commodo consequat. Duis te feugifacilisi.</p> 
+	</div>
+
+	</body>
+	
+</html>
